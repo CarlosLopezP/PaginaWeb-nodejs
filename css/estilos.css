@@ -1,0 +1,99 @@
+/*Resoluciones 320px*/
+@media (max-width: 321px){
+	#inicio{
+		font-size: 1.5em;
+	}
+}
+/*estilos movil*/
+@media (max-width: 800px){
+	#chat h2, #btnSesion{
+		display: inline-block;
+		vertical-align: middle;
+	}
+	#listaUsuarios{
+		display: none;
+		left: 0;
+		margin: 0;
+		position:absolute;
+		width: 70%;
+		z-index: 100;
+	}
+	#mensajesChat{
+		margin: 0;
+		vertical-align: top;
+		width: 100%;
+	}
+	#menu{
+		background: #999999;
+		-webkit-border-bottom-left-radius: 10px;
+		-moz-border-radius-bottomleft: 10px;
+		border-bottom-left-radius: 10px;
+		-webkit-box-shadow: -5px 5px 17px 0px rgba(0, 0, 0, 0.44);
+		-moz-box-shadow:    -5px 5px 17px 0px rgba(0, 0, 0, 0.44);
+		box-shadow:         -5px 5px 17px 0px rgba(0, 0, 0, 0.44);
+		margin: 0;
+		padding: 0.3em;
+		position: absolute;
+		right: 0;
+		width: 70%;
+		z-index: 120;
+	}
+	#menu ul li{
+		text-align: center;
+		margin: 0 0 0.3em 0.2em
+	}
+	#menu ul li a{
+		background: #747474;
+		border-radius: 10px;
+		font-size: 1.5em;
+		padding: 0.2em 0;	
+	}
+}
+/*estilos tablet*/
+@media (min-width: 801px and max-width: 1024){
+	body{
+		background: green;
+	}
+}
+/*estilos pc*/
+@media (min-width: 1025px){
+	#btnMenu,#btnlistaUsuarios, #chat h2 {
+		display: none;
+	}
+	#botonesMenu, #menu, #titulo{
+		display: inline-block;
+		vertical-align: middle;
+	}
+	#listaUsuarios{
+		width: 20%;
+	}
+	#listaUsuarios, #mensajesChat{
+		display: inline-block; 
+		vertical-align: top;
+	}
+	#mensajesChat{
+		width: 79%;
+	}
+	#menu{
+		max-width: 70%;
+		width: 70%;
+	}
+	#menu ul{
+		padding-left: 1.5%; 
+	}
+	#menu ul li{
+		display: inline-block;
+		text-align: center;
+		width: 19.2%;
+	}
+	#menu ul li a{
+		font-size: 1.3em;
+		padding: 0.2em 0;
+	}
+	/*hovers*/
+	#menu ul li a:hover{
+		background: #CCCCCC;
+		border-bottom: solid 3px red;
+		color:  #333333;
+	}
+}

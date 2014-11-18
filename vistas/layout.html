@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es" ng-app>
+	<head>
+		<meta charset="UTF-8"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, maximum-scale=1">
+		<meta name="viewport" content="height=device-height, initial-scale=1, maximum-scale=1"/>
+		<title>Página Web</title>
+		<!--Estilos-->
+		<link href="../css/normalize.css" rel="stylesheet"/>
+		<link href="../css/animate.css" rel="stylesheet"/>
+		<link href="../css/referencias.css" rel="stylesheet"/>
+		<link href="../css/estandar.css" rel="stylesheet"/>
+		<link href="../css/estilos.css" rel="stylesheet"/>
+		<!--Javascript-->
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.26/angular.min.js" type="text/javascript"></script>
+		<script src="../js/base.js" type="text/javascript"></script>
+	</head>
+	<body class="animated fadeInDown">
+		<header ng-controller="menu">
+			<h2 class="semantica">Cabecera</h2>
+			<div id="btnSesion" ng-click="sesionClick()"></div>
+			<div id="sesion" class="animated fadeInLeft">
+				<h2>Sesión</h2>
+			</div>
+			<div id="titulo">
+				<img id="logo" src="../imagenes/iconos/UPIICSA.png" alt="logo"/>
+				<h1 id="inicio"><a href="/">Página Web</a></h1>
+			</div>
+			<div id="btnMenu" ng-click="menuClick()"></div>
+			<nav id="menu" class="animated fadeIn">
+				<h2 class="semantica">Menú de navegación</h2>
+				<ul>
+					<li><a href="/chat">Chat</a></li>
+					<li><a href="#">Opción 2</a></li>
+					<li><a href="#">Opción 3</a></li>
+					<li><a href="#">Opción 4</a></li>
+					<li><a href="#">Opción 5</a></li>
+				</ul>
+			</nav>
+		</header>
+		<section id="contenedor">
+			{% block contenido %}
+			{% endblock %}
+		</section>
+		<footer>
+			<h2 class="semantica">Pie de página</h2>
+			<div>
+				<h2>Nosotros</h2>
+			</div>
+			<div>
+				<h2>Ustedes</h2>
+			</div>
+			<div>
+				<h2>Ellos</h2>
+			</div>
+		</footer>
+	</body>
+</html>

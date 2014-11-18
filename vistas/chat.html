@@ -1,0 +1,30 @@
+{% extends "layout.html" %}
+{% block contenido %}
+<div id="loginSesion">
+	<h2 style="display: none">Inicie sesión para continuar :(</h2>
+</div>
+<div id="chat" ng-controller="chat">
+	<div id="btnlistaUsuarios" ng-click="listaClick()"></div>
+	<aside id="listaUsuarios">
+		<h2>Lista de Usuario</h2>
+		<ul>
+			<li>hola</li>
+			<li>hola</li>
+			<li>hola</li>
+			<li>hola</li>
+			<li>hola</li>
+			<li>hola</li>
+			<li>hola</li>
+			<li>hola</li>
+			<li>hola</li>
+		</ul>
+	</aside>
+	<h2>Chat</h2>
+	<article id="mensajesChat">
+		<div id="contMsn"></div>
+		<textarea id="mensaje" wrap="soft"></textarea>
+	</article>
+</div>
+<script src="/socket.io/socket.io.js"></script>
+<script src="../js/chat.js" type="text/javascript"></script>
+{% endblock %}

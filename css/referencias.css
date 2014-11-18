@@ -1,0 +1,24 @@
+#botonesMenu{
+	background: red;
+}
+#sesion{
+	background: yellow;
+}
+#sesion h2{
+	height: 55px;
+}
+#sesion h2{
+	background: red;
+	text-align: center;
+	color: white;
+	vertical-align: middle;
+}
+aside{
+	background: #DEB887;
+}
+article{
+	background: red;
+}
+#contMsn{
+	background: blue;
+}
